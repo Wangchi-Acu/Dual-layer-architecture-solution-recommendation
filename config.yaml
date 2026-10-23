@@ -1,0 +1,37 @@
+app:
+  title: "失眠针刺方案智能推荐系统（双层架构）"
+  version: "v1.3-formal-20261023"
+  disclaimer: "本系统仅供科研参考，不构成临床诊断或治疗依据。预测概率请作为风险排序与把握度参考，而非绝对风险值。穴位定位示意图仅供定位参考，具体取穴请以执业针灸医师操作为准。"
+
+# 方案命名：key 与数据中的类别编码一致（y_cls: 1/2/3；y_binK 对应方案 K）
+# 编码本（2026-10-23 研究者更正）：1=通督调卫，2=通督调脏，3=通督养心
+schemes:
+  "1": "方案一（通督调卫）"
+  "2": "方案二（通督调脏）"
+  "3": "方案三（通督养心）"
+
+# 各方案穴位定位示意图（相对项目根目录；支持静态 png 或动图 gif）
+# 注：图内标题仍沿用旧方案编号，研究者将以自有版本替换——替换时保持同名覆盖即可
+acupoint_images:
+  "1": "assets/acupoint/方案一_通督调卫_动图.gif"
+  "2": "assets/acupoint/方案二_通督调脏_动图.gif"
+  "3": "assets/acupoint/方案三_通督养心_动图.gif"
+
+models_dir: "models"
+assets_dir: "assets"
+
+# 各层模型文件（models/ 目录内文件与 JSON 必须来自同一次训练定稿）
+layer1:
+  pkl: "layer1_multiclass.pkl"
+  calibrator: "layer1_calibrator.pkl"
+  target: "y_cls"
+layer2:
+  - target: "y_bin1"
+    scheme: "1"
+    pkl: "layer2_y_bin1.pkl"
+  - target: "y_bin2"
+    scheme: "2"
+    pkl: "layer2_y_bin2.pkl"
+  - target: "y_bin3"
+    scheme: "3"
+    pkl: "layer2_y_bin3.pkl"

@@ -1,0 +1,31 @@
+{
+ "y_cls": {},
+ "y_bin1": {
+  "SS1*BPSQI_ge14": 0.0,
+  "SS12*SS28": 0.0,
+  "SF1*SF2": 0.0
+ },
+ "y_bin2": {
+  "AGE*VLF(%)": 1460.46,
+  "BISI*DUR": 282.0,
+  "BISI*PA": 32.0,
+  "MAR*ULF(%)": 6.92,
+  "AGE*MAE_1": 47.03,
+  "DI7*PG": 0.0,
+  "PC*MPE_4": 2.54,
+  "PC*BubbleEntropy": 1.3849999999999998
+ },
+ "y_bin3": {
+  "BISI*SF1": 14.0,
+  "SS2*C1d": 0.375,
+  "Porta's Index*MPE_1": 123.66745,
+  "PE*C1d": 1.275,
+  "BISI*DistributionEntropy": 20.1,
+  "AGE*PA": 83.0,
+  "BSDS*C1d": 29.71,
+  "SEX*SS37": 0.0,
+  "SS16*SS20": 0.0,
+  "BISI*SF3": 8.0,
+  "BPSQI*BISI": 172.5
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "y_cls": [
+  "OCC",
+  "EDU",
+  "SS37",
+  "MAE_3",
+  "Porta's Index",
+  "C1d",
+  "DI8",
+  "MPE_4",
+  "BSAS",
+  "pNN50 (%)",
+  "BubbleEntropy",
+  "SF6",
+  "InfoEntropy",
+  "HFnu",
+  "SS15"
+ ],
+ "y_bin1": [
+  "SS1*BPSQI_ge14",
+  "SS12*SS28",
+  "SF1*SF2"
+ ],
+ "y_bin2": [
+  "AGE*VLF(%)",
+  "BISI*DUR",
+  "BISI*PA",
+  "MAR*ULF(%)",
+  "AGE*MAE_1",
+  "DI7*PG",
+  "PC*MPE_4",
+  "PC*BubbleEntropy"
+ ],
+ "y_bin3": [
+  "BISI*SF1",
+  "SS2*C1d",
+  "Porta's Index*MPE_1",
+  "PE*C1d",
+  "BISI*DistributionEntropy",
+  "AGE*PA",
+  "BSDS*C1d",
+  "SEX*SS37",
+  "SS16*SS20",
+  "BISI*SF3",
+  "BPSQI*BISI"
+ ]
+}
